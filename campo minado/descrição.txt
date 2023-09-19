@@ -1,0 +1,32 @@
+Este código em C++ implementa um jogo de campo minado para um jogador. Vou descrever suas principais funcionalidades:
+
+Inclusão de Bibliotecas:
+
+O código inclui as bibliotecas <iostream>, <stdio.h>, <stdlib.h> e <locale.h> para manipulação de entrada/saída e funcionalidades relacionadas à localização.
+Função main:
+
+A função main é o ponto de entrada do programa.
+É configurada a localização para "Portuguese" usando setlocale para exibir mensagens em português.
+Captura de Informações do Usuário:
+
+O código solicita ao jogador as dimensões do campo (número de linhas e colunas) e o número de minas a serem colocadas.
+Verifica se as dimensões do campo e o número de minas são válidos (maiores que 2) e repete a solicitação em caso de entrada inválida.
+Geração Aleatória das Minas:
+
+O código gera aleatoriamente as posições das minas no campo, evitando duplicatas.
+Calcula os números de minas adjacentes a cada célula e os armazena no campo.
+Inicialização de Matrizes e Exibição Inicial:
+
+Inicializa matrizes para rastrear as minas (campo) e as jogadas do jogador (mnr) e uma matriz para exibir o campo para o jogador (EX).
+Exibe uma representação inicial do campo oculto com "#" para o jogador.
+Loop Principal do Jogo:
+
+O jogo entra em um loop onde o jogador faz suas jogadas.
+O jogador seleciona uma célula informando a linha e coluna desejadas.
+O código verifica se a jogada é válida e, em caso afirmativo, revela o valor da célula (número de minas adjacentes ou uma mina).
+O loop continua até que o jogador ganhe (todas as células não minadas são reveladas) ou perca (uma mina é revelada).
+Fim do Jogo:
+
+Quando o jogo termina, exibe se o jogador ganhou ou perdeu.
+Mostra a configuração final do campo e o número de jogadas realizadas.
+É importante observar que o código tem algumas áreas onde poderiam ser feitas melhorias e correções, como a geração de minas aleatórias e a verificação de jogadas válidas. Além disso, algumas partes do código podem ser otimizadas e simplificadas.

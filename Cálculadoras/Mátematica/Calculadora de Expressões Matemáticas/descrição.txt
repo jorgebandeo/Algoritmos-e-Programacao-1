@@ -1,0 +1,8 @@
+Esta pasta de código contém um programa C++ que realiza uma série de cálculos matemáticos envolvendo as variáveis a, b, c e r1. O programa realiza as seguintes operações:
+
+Inicializa as variáveis a e b com os valores 5 e 3, respectivamente.
+Calcula o valor de c com a expressão c = b - a / b - a, onde são utilizadas operações de adição, subtração e divisão.
+Atualiza o valor de b com a - c.
+Calcula o valor de r1 com a expressão r1 = b % 4 == b + c - a, que envolve operações de módulo, igualdade e adição.
+Imprime os valores de a, b, c e r1 na saída padrão (console).
+Esta pasta de código pode ser útil para fins de aprendizado, demonstrando como realizar cálculos simples em C++ e usar operadores aritméticos e de comparação. Também pode ser usada como ponto de partida para experimentar com diferentes expressões matemáticas e entender como os valores das variáveis são atualizados em cada etapa do programa.

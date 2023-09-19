@@ -1,0 +1,1 @@
+Esta pasta contém um programa C++ simples que realiza a multiplicação de dois números digitados pelo usuário. O programa solicita ao usuário que insira dois números inteiros e, em seguida, calcula o produto desses números e exibe o resultado. É uma calculadora de multiplicação básica que demonstra o uso de entrada e saída de dados em C++.

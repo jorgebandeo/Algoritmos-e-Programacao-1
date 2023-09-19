@@ -1,0 +1,35 @@
+Este código em C++ é um programa que calcula os dígitos verificadores de um número de CPF inserido pelo usuário. Ele recebe os 9 ou 8 primeiros dígitos do CPF e calcula os dois dígitos verificadores finais, de acordo com as regras de validação do CPF no Brasil. Abaixo está uma descrição detalhada do código:
+
+O programa inclui três bibliotecas padrão: iostream, locale.h e math.h.
+
+Usa a declaração "using namespace std;" para evitar a necessidade de prefixar objetos e funções da biblioteca padrão com "std::".
+
+Inicializa um comentário que indica o nome do aluno que escreveu o código ("aluno: Jorge Bandeo").
+
+O ponto de entrada do programa é a função "main".
+
+Define a localidade para "Portuguese" usando a função "setlocale", que configura o programa para exibir mensagens em português.
+
+Declara uma série de variáveis para armazenar os dígitos do CPF, bem como variáveis para armazenar os cálculos intermediários.
+
+Solicita ao usuário que insira os 9 ou 8 primeiros dígitos do CPF.
+
+Verifica se o número de dígitos inseridos está no intervalo correto (entre 8 e 9 dígitos) usando uma estrutura condicional.
+
+Se o número de dígitos estiver correto, o programa continua com os cálculos para determinar os dígitos verificadores do CPF.
+
+Divide o número de CPF em seus dígitos individuais, armazenando cada dígito em variáveis separadas (d1, d2, ..., d9).
+
+Realiza os cálculos para o primeiro dígito verificador (digitoverificador1), que envolvem a multiplicação de cada dígito pelo seu respectivo multiplicador e a soma dos produtos, seguida pela obtenção do resto da divisão por 11.
+
+Calcula o segundo dígito verificador (digitoverificador2) usando uma fórmula semelhante, mas com multiplicadores diferentes e incluindo o primeiro dígito verificador no cálculo.
+
+Verifica se o resto das somas dos cálculos do primeiro e segundo dígitos verificadores é menor que 2. Se for, o dígito verificador é definido como 0; caso contrário, é calculado como a diferença entre 11 e o resto.
+
+Exibe os dígitos verificadores calculados juntamente com o CPF completo.
+
+Se o número de dígitos inseridos estiver fora do intervalo correto, o programa exibe uma mensagem de erro.
+
+O programa retorna 0 para indicar que foi executado com sucesso e, em seguida, termina.
+
+Este programa é uma implementação simples do cálculo dos dígitos verificadores de um CPF brasileiro e pode ser útil para verificar a validade de um CPF fornecido pelo usuário.
